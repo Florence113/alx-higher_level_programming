@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-import sys
-
 def safe_print_integer_err(value):
     """Prints an integer with "{:d}".format().
     If a ValueError message is caught, a corresponding
@@ -14,7 +12,7 @@ def safe_print_integer_err(value):
         If a TypeError or ValueError occurs - False.
         Otherwise - True.
     """
-
+    import sys
     try:
         print("{:d}".format(value))
         return (True)
